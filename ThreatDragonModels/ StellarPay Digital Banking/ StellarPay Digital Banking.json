@@ -31,8 +31,8 @@
                 "text": "User"
               },
               "body": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
@@ -128,13 +128,13 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "providesAuthentication": false,
               "threats": [
                 {
                   "id": "1ef19c6f-9f27-4af8-a463-db1ba8c9a591",
                   "title": "Stolen credentials",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "Critical",
                   "type": "Spoofing",
                   "description": "An attacker can get access to a users account by stealing their credentials and posing as the authorized user. ",
@@ -147,7 +147,7 @@
                 {
                   "id": "e87d4560-de5c-47d4-8fec-8c7f1a1c890b",
                   "title": "Denying activity",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "Medium",
                   "type": "Repudiation",
                   "description": "A user can deny making a transaction",
@@ -159,8 +159,8 @@
                 }
               ],
               "threatFrequency": {
-                "spoofing": 8,
-                "repudiation": 3
+                "spoofing": 10,
+                "repudiation": 4
               }
             }
           },
@@ -178,8 +178,8 @@
                 "text": "Administrator"
               },
               "body": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
@@ -275,13 +275,13 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "providesAuthentication": false,
               "threats": [
                 {
                   "id": "94941d69-0f71-475d-a0bb-377cb45410db",
                   "title": "Stolen credentials",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "Critical",
                   "type": "Spoofing",
                   "description": "Same as the user an attacker can steal the credentials of a admin and make any changes to the system or even steal data.",
@@ -294,7 +294,7 @@
                 {
                   "id": "421617ca-7f7a-4258-9620-bf26abfbce25",
                   "title": "Denying changes",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "Medium",
                   "type": "Repudiation",
                   "description": "Administrators can deny accessing a users data",
@@ -306,8 +306,8 @@
                 }
               ],
               "threatFrequency": {
-                "spoofing": 4,
-                "repudiation": 2
+                "spoofing": 5,
+                "repudiation": 3
               }
             }
           },
@@ -325,8 +325,8 @@
                 "text": "Web server"
               },
               "body": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
@@ -422,7 +422,7 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
@@ -431,7 +431,7 @@
                 {
                   "id": "26ea675c-58f4-47f1-900f-17670651fcc6",
                   "title": "Change function",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "High",
                   "type": "Tampering",
                   "description": "An attacker can change the function of the web server",
@@ -444,7 +444,7 @@
                 {
                   "id": "c7b2478e-c54f-4053-bdac-b2524dc0ad60",
                   "title": "Stop web server",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "Medium",
                   "type": "Denial of service",
                   "description": "An attacker can stop the web server from working",
@@ -457,10 +457,10 @@
               ],
               "threatFrequency": {
                 "spoofing": 0,
-                "tampering": 2,
+                "tampering": 3,
                 "repudiation": 0,
                 "informationDisclosure": 0,
-                "denialOfService": 3,
+                "denialOfService": 4,
                 "elevationOfPrivilege": 0
               }
             }
@@ -479,8 +479,8 @@
                 "text": "App server"
               },
               "body": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
@@ -576,7 +576,7 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
@@ -585,7 +585,7 @@
                 {
                   "id": "741c0d2b-3e52-4790-82f6-95027afa3f1a",
                   "title": "Change funtion",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "High",
                   "type": "Tampering",
                   "description": "An attacker can hack the app server and change the functionality of it. They can make it so that the the server can send all data retrieved from the database is send straight to them.",
@@ -598,7 +598,7 @@
                 {
                   "id": "32c646a5-52de-40a4-ba50-c99ad2401705",
                   "title": "Stop app",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "Medium",
                   "type": "Denial of service",
                   "description": "When the attacker can gain access to the server they can stop it from working. This will make other users not be able to use the application.",
@@ -611,10 +611,10 @@
               ],
               "threatFrequency": {
                 "spoofing": 0,
-                "tampering": 3,
+                "tampering": 4,
                 "repudiation": 0,
                 "informationDisclosure": 0,
-                "denialOfService": 6,
+                "denialOfService": 7,
                 "elevationOfPrivilege": 0
               }
             }
@@ -633,13 +633,11 @@
                 "text": "Database"
               },
               "topLine": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
@@ -735,7 +733,7 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
@@ -745,7 +743,7 @@
                 {
                   "id": "2a8861f4-0542-4f54-b4f8-c7d6f4858ff1",
                   "title": "Steal data",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "Critical",
                   "type": "Information disclosure",
                   "description": "An attacker can gain access to the database and steal all the data the company has.",
@@ -759,7 +757,7 @@
               "threatFrequency": {
                 "tampering": 0,
                 "repudiation": 0,
-                "informationDisclosure": 4,
+                "informationDisclosure": 5,
                 "denialOfService": 0
               }
             }
@@ -1560,8 +1558,8 @@
                 "text": "Admin dashboard"
               },
               "body": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
@@ -1657,7 +1655,7 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
@@ -1666,7 +1664,7 @@
                 {
                   "id": "731bf9fc-bd69-449d-ba2e-933362d0d20a",
                   "title": "Increase privileges",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "Medium",
                   "type": "Elevation of privilege",
                   "description": "An attacker can gain access to the dashboard and give themselves administration privileges",
@@ -1679,7 +1677,7 @@
                 {
                   "id": "5238e04e-6252-4d72-8012-ac0a1bf4d298",
                   "title": "Change transfer amount",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "Medium",
                   "type": "Tampering",
                   "description": "An attacker can change the amount the admin originally wanted transfer",
@@ -1692,11 +1690,11 @@
               ],
               "threatFrequency": {
                 "spoofing": 0,
-                "tampering": 1,
+                "tampering": 2,
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
-                "elevationOfPrivilege": 2
+                "elevationOfPrivilege": 3
               }
             }
           },
@@ -1714,8 +1712,8 @@
                 "text": "User dashboard"
               },
               "body": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
@@ -1811,7 +1809,7 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
@@ -1820,7 +1818,7 @@
                 {
                   "id": "9a45a009-8179-4d23-a0fb-91375dea8536",
                   "title": "Change transfer amount",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "High",
                   "type": "Tampering",
                   "description": "An attacker can change the amount a user wanted to transfer",
@@ -1833,7 +1831,7 @@
               ],
               "threatFrequency": {
                 "spoofing": 0,
-                "tampering": 5,
+                "tampering": 6,
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
@@ -1855,8 +1853,8 @@
                 "text": "Login/Sign up"
               },
               "body": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
@@ -1952,7 +1950,7 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
@@ -1961,7 +1959,7 @@
                 {
                   "id": "d484c0ce-c92b-45ca-9482-77bd18ee8f29",
                   "title": "Stolen credentials",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "Critical",
                   "type": "Spoofing",
                   "description": "Attacker can pose as user and go through the login process.",
@@ -1973,7 +1971,7 @@
                 }
               ],
               "threatFrequency": {
-                "spoofing": 4,
+                "spoofing": 5,
                 "tampering": 0,
                 "repudiation": 0,
                 "informationDisclosure": 0,
